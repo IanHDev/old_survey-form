@@ -1,0 +1,27 @@
+html body {
+  /* setting universal font size */
+  font-size: 1rem;
+  background: linear-gradient(180deg, #6f4e37, black) fixed;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: white;
+}
+
+#title {
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 3rem;
+}
+
+#form-inner {
+  background: #6f373cef;
+  width: 80%;
+  margin: 0 auto;
+  border-radius:  25px;
+}
+
+#title-inner {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 25px;
+}
+
