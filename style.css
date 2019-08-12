@@ -12,6 +12,14 @@ html body {
   font-size: 3rem;
 }
 
+#description {
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+ line-height: 1.5rem;
+}
+
 #form-inner {
   background: #6f373cef;
   width: 80%;
@@ -23,5 +31,6 @@ html body {
   font-size: 2rem;
   text-align: center;
   padding-top: 25px;
+  padding-bottom: 25px;
 }
 
