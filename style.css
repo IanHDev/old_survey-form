@@ -34,3 +34,17 @@ html body {
   padding-bottom: 25px;
 }
 
+#left-field {
+  display: inline-block;
+  color: red;
+
+}
+
+#right-field {
+  display: inline-block;
+
+}
+
+#submit {
+  align-content: center;
+}
