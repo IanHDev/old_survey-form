@@ -25,6 +25,15 @@ html body {
   width: 80%;
   margin: 0 auto;
   border-radius:  25px;
+  
+}
+#survey-form {
+
+}
+
+#test-flex {
+  display: flex;
+  flex-direction: row;
 }
 
 #title-inner {
@@ -35,13 +44,14 @@ html body {
 }
 
 #left-field {
-  display: inline-block;
-  color: red;
+
+
 
 }
 
 #right-field {
-  display: inline-block;
+ 
+
 
 }
 
