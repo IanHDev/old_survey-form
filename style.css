@@ -14,69 +14,48 @@ html body {
 
 #description {
   text-align: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 50px;
- line-height: 1.5rem;
+  width: 70%;
+  padding: 50px 50px 50px 50px;
+  line-height: 1.5rem;
+  margin: auto;
+  
+}
+
+#coffee-pic {
+  width: 10%;
 }
 
 #form-inner {
   background: #6f373cef;
   width: 80%;
-  margin: 0 auto;
+  margin: auto;
   border-radius:  25px;
+  
   
 }
 
 .title-inner {
-
+text-align: center;
 }
 
 .field-row {
+
 
 }
 
 .name-field {
 display: inline-block;
 text-align: right;
+font-size: 1.5rem;
+padding: 10px 10px 10px 10px;
+width: 40%;
+vertical-align: top;
 }
 
 .input-field {
 display: inline-block;
 text-align: left;
+padding: 10px 10px 10px 10px;
+width: 40%;
+vertical-align: center;
 }
-
-
-/* #survey-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#test-flex {
-  display: flex;
-  flex-direction: row;
-}
-
-#title-inner {
-  font-size: 2rem;
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-#left-field {
-
-
-
-}
-
-#right-field {
- 
-
-
-}
-
-#submit {
-  align-content: center;
-} */
