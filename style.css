@@ -27,7 +27,27 @@ html body {
   border-radius:  25px;
   
 }
-#survey-form {
+
+.title-inner {
+
+}
+
+.field-row {
+
+}
+
+.name-field {
+display: inline-block;
+text-align: right;
+}
+
+.input-field {
+display: inline-block;
+text-align: left;
+}
+
+
+/* #survey-form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,4 +79,4 @@ html body {
 
 #submit {
   align-content: center;
-}
+} */
