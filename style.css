@@ -19,17 +19,17 @@ html body {
   line-height: 1.5rem;
   font-style: italic;
   margin: auto;
-  
+  font-size: 1.15rem;
 }
 
 #coffee-pic {
   display: block;
   margin: auto;
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   animation-name: bounce;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
 
@@ -37,13 +37,26 @@ html body {
 
 @keyframes bounce {
   0% {
-    left: -600px;
+    left: -1000px;
     opacity: 0;
   }
-  100% {left: 0px;
-    opacity: 1;
+  100% {
+    left: 0px;
+    opacity: 1
   }
 }
+
+/* @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
 
 
 
@@ -74,10 +87,7 @@ font-size: 1.5rem;
 padding: 10px 10px 10px 10px;
 width: 40%;
 vertical-align: top;
-animation-name: bounce;
-animation-duration: 10s;
-animation-iteration-count: 1;
-animation-timing-function: linear;
+
 }
 
 .input-field {
@@ -86,8 +96,12 @@ text-align: left;
 padding: 10px 10px 10px 10px;
 width: 40%;
 vertical-align: center;
-animation-name: bounce;
-animation-duration: 10s;
-animation-iteration-count: 1;
-animation-timing-function: linear;
+
+
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 8s;
+  animation-iteration-count: 1;
 }
