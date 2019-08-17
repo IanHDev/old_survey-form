@@ -9,21 +9,44 @@ html body {
 #title {
   text-align: center;
   font-family: 'Indie Flower', cursive;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 #description {
   text-align: center;
   width: 70%;
-  padding: 50px 50px 50px 50px;
+  padding: 50px 50px 1px 50px;
   line-height: 1.5rem;
+  font-style: italic;
   margin: auto;
   
 }
 
 #coffee-pic {
-  width: 10%;
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+
 }
+
+@keyframes bounce {
+  0% {
+    left: -600px;
+    opacity: 0;
+  }
+  100% {left: 0px;
+    opacity: 1;
+  }
+}
+
+
+
 
 #form-inner {
   background: #6f373cef;
@@ -36,6 +59,7 @@ html body {
 
 .title-inner {
 text-align: center;
+
 }
 
 .field-row {
@@ -50,6 +74,10 @@ font-size: 1.5rem;
 padding: 10px 10px 10px 10px;
 width: 40%;
 vertical-align: top;
+animation-name: bounce;
+animation-duration: 10s;
+animation-iteration-count: 1;
+animation-timing-function: linear;
 }
 
 .input-field {
@@ -58,4 +86,8 @@ text-align: left;
 padding: 10px 10px 10px 10px;
 width: 40%;
 vertical-align: center;
+animation-name: bounce;
+animation-duration: 10s;
+animation-iteration-count: 1;
+animation-timing-function: linear;
 }
