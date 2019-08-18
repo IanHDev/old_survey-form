@@ -46,7 +46,7 @@ html body {
   }
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -56,7 +56,7 @@ html body {
   100% {
     opacity: 1;
   }
-}
+} */
 
 
 
@@ -98,10 +98,43 @@ width: 40%;
 vertical-align: center;
 
 
+
 }
 
 .fadeIn {
   animation-name: fadeIn;
   animation-duration: 8s;
   animation-iteration-count: 1;
+}
+
+.coffee-icon {
+  height: 75px;
+  width: 75x;
+}
+
+.submit-button {
+  display: block;
+  margin: 50px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1.15rem;
+  border-radius: 5px;
+}
+
+.icon-radio {
+  display: inline-block;
+  text-align: right;
+  font-size: 1.5rem;
+  padding: 10px 10px 10px 10px;
+  width: 40%;
+  vertical-align: middle;
+  
+}
+
+.icon-field {
+  display: inline-block;
+  text-align: left;
+  padding: 10px 10px 10px 10px;
+  width: 40%;
+  vertical-align: middle;
 }
