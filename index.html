@@ -8,13 +8,8 @@
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Ubuntu+Condensed&display=swap" rel="stylesheet">
   <title>Harmony Coffee Club</title>
 </head>
-<!-- 
-  
-  *Things to do:
--pull in 3 or 4 fonts from google and document in html/body
-- 
--->
-</body>
+
+
   <body>
     <h1 id="title">Welcome to the Harmony Coffee Club</h1>
     <div id="form-inner">
@@ -26,32 +21,37 @@
         <h2 class="title-inner fadeIn">Before we get started, tell us about yourself!</h2>
         <div class="fadeIn">
 
-
-
           <div class="field-row">
             <div class="name-field">
+              <label for="name" id="name-label">
               Name:
+            </label>
             </div>
             <div class="input-field">
-                <Input type="text" placeholder="Enter Your Name">
+                <Input id="name" type="text" placeholder="Enter Your Name" for="Name" required>
             </div>
           </div>
           
           <div class="field-row">
               <div class="name-field">
-                E-Mail:
+                  <label for="email" id="email-label">
+                      Email:
+                    </label>
               </div>
-              <div id="email">
-                  <Input type="email" placeholder="E-Mail">
+              <div class="input-field">
+                  <Input id="email" type="email" placeholder="E-Mail" for="email" required>
               </div>
           </div>
           
           <div class="field-row">
-              <div id="number">
-                Age:
+              <div class="name-field">
+                
+                  <label for="number" id="number-label">
+                      Age:
+                    </label>
               </div>
               <div class="input-field">
-                  <Input type="number" placeholder="Age">
+                  <Input id="number" type="number" placeholder="Age" min="10" max="100" for="Age" required>
               </div>
           </div>
           
@@ -60,21 +60,21 @@
                 City:
               </div>
               <div class="input-field">
-                  <Input type="text" placeholder="City">
+                  <Input type="text" placeholder="City" for="city">
               </div>
           </div>
-          <input class="submit-button" type="submit" value="Submit">
+          <input class="submit-button" type="submit" value="Submit" required>
 
 
           <h2 class="title-inner fadeIn">
-            Great! Now tell us your preferred brew methods.
+            Great! Now tell us your favorite brew method.
           </h2>
 
           <!-- Images used are from: https://www.iconfinder.com/ under creative commons. -->
 
           <div class="field-row">
               <div class="icon-radio">
-                  <Input type="radio" name="aeropress">
+                  <Input type="radio" name="style" value="aeropress">
               </div>
               <div class="icon-field">
                 <img class="coffee-icon" src="images\aeropress.png" alt="aeropress">
@@ -84,7 +84,7 @@
 
           <div class="field-row">
               <div class="icon-radio">
-                  <Input type="radio" name="chemex">
+                  <Input type="radio" name="style" value="chemex">
               </div>
               <div class="icon-field">
                 <img class="coffee-icon" src="images\chemex.png" alt="chemex">
@@ -94,7 +94,7 @@
 
           <div class="field-row">
               <div class="icon-radio">
-                  <Input type="radio" name="drip">
+                  <Input type="radio" name="style" value="drip">
               </div>
               <div class="icon-field">
                 <img class="coffee-icon" src="images\drip.png" alt="drip coffee">
@@ -104,7 +104,7 @@
 
           <div class="field-row">
               <div class="icon-radio">
-                  <Input type="radio" name="espresso">
+                  <Input type="radio" name="style" value="espresso">
               </div>
               <div class="icon-field">
                 <img class="coffee-icon" src="images\espresso.png" alt="espresso">
@@ -114,7 +114,7 @@
 
           <div class="field-row">
               <div class="icon-radio">
-                  <Input type="radio" name="french press">
+                  <Input type="radio" name="style" value="french press">
               </div>
               <div class="icon-field">
                 <img class="coffee-icon" src="images\french-press.png" alt="french press">
@@ -123,7 +123,7 @@
 
           <div class="field-row">
               <div class="icon-radio">
-                  <Input type="radio" name="kettle">
+                  <Input type="radio" name="style" value="kettle">
               </div>
               <div class="icon-field">
                 <img class="coffee-icon" src="images\kettle.png" alt="kettle">
@@ -132,19 +132,19 @@
 
           <div class="field-row">
               <div class="icon-radio">
-                  <Input type="radio" name="syphon">
+                  <Input type="radio" name="style" value="syphon">
               </div>
               <div class="icon-field">
-                <img class="coffee-icon" src="images\syphon.png" alt="kettle">
+                <img class="coffee-icon" src="images\syphon.png" alt="syphon">
               </div>
           </div>
 
           <div class="field-row">
               <div class="icon-radio">
-                  <Input type="radio" name="turkish">
+                  <Input type="radio" name="style" value="turkish">
               </div>
               <div class="icon-field">
-                <img class="coffee-icon" src="images\turkish.png" alt="kettle">
+                <img class="coffee-icon" src="images\turkish.png" alt="turkish">
               </div>
           </div>
           <input class="submit-button" type="submit" value="Submit">
@@ -156,7 +156,7 @@
               <div class="name-field">
                 Preferred coffee roast:
               </div>
-              <div class="input-field">
+              <div id="dropdown">
                   <select name="dropdown">
                     <option value="Light Roast">Light Roast</option>
                     <option value="Medium Roast">Medium Roast</option>
@@ -170,10 +170,10 @@
                   Caffeine:
                 </div>
                 <div class="input-field">
-                    <select name="dropdown">
-                      <option value="Regular">Regular</option>
-                      <option value="Medium Roast">Decaffeinated</option>
-                    </select>
+                    <Input type="radio" name="caffeine" value="Regular">Regular
+                      <br>                  
+                    <Input type="radio" name="caffeine" value="decaffeinated">Decaffeinated
+                    
                 </div>
               </div>
 
@@ -196,11 +196,11 @@
                     Special instructions and comments:
                   </div>
                   <div class="input-field">
-                    <textarea rows="4" cols="50" name="comments" id="comments">Enter your comments here</textarea>
+                    <textarea rows="5" cols="45" name="comments" id="comments" placeholder="Enter your comments here"></textarea>
 
                   </div>
                 </div>
-                <input class="submit-button" type="submit" value="Submit">
+                <input id="submit" type="submit" value="Submit">
                 <br>
                 <br>
 
@@ -212,3 +212,5 @@
     </div>      
   </body>
 </html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
