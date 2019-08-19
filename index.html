@@ -41,13 +41,13 @@
               <div class="name-field">
                 E-Mail:
               </div>
-              <div class="input-field">
+              <div id="email">
                   <Input type="email" placeholder="E-Mail">
               </div>
           </div>
           
           <div class="field-row">
-              <div class="name-field">
+              <div id="number">
                 Age:
               </div>
               <div class="input-field">
@@ -179,7 +179,7 @@
 
               <div class="field-row">
                   <div class="name-field">
-                    Flavors and Notes
+                    Flavors and Notes:
                   </div>
                   <div class="input-field">
                       <input type="checkbox" name="flavor1" value="Chocolate"> Chocolate<br>
@@ -190,6 +190,19 @@
                       <input type="checkbox" name="flavor2" value="almont"> Almond<br>
                   </div>
                 </div>
+
+                <div class="field-row">
+                  <div class="name-field">
+                    Special instructions and comments:
+                  </div>
+                  <div class="input-field">
+                    <textarea rows="4" cols="50" name="comments" id="comments">Enter your comments here</textarea>
+
+                  </div>
+                </div>
+                <input class="submit-button" type="submit" value="Submit">
+                <br>
+                <br>
 
 
         </div>
